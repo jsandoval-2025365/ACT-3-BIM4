@@ -1,0 +1,27 @@
+<section class="catalogo">
+  <h2>Catálogo de productos</h2>
+
+  <div class="grid-productos" *ngIf="productos.length > 0; else sinProductos">
+    <div
+      class="tarjeta-producto"
+      *ngFor="let producto of productos"
+      [class.agregado]="ultimoAgregadoId === producto.id">
+
+      <div class="info-producto">
+        <h3>{{ producto.nombre }}</h3>
+        <p class="precio">{{ producto.precio | currency:'GTQ ' }}</p>
+      </div>
+
+      <button
+        type="button"
+        class="btn-agregar"
+        (click)="agregarAlCarrito(producto)">
+        {{ ultimoAgregadoId === producto.id ? '✓ Agregado' : 'Agregar al carrito' }}
+      </button>
+    </div>
+  </div>
+
+  <ng-template #sinProductos>
+    <p class="vacio">No hay productos disponibles en este momento.</p>
+  </ng-template>
+</section>

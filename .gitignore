@@ -1,0 +1,9 @@
+# Dependencias (pesa demasiado y se autogenera)
+node_modules/
+
+# Caché de Angular (se genera al compilar y ralentiza Git)
+/.angular/
+
+# Producción (los archivos finales listos para subir al servidor)
+/dist/
+
