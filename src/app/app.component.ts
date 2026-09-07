@@ -10,5 +10,5 @@ import { ResumenCarritoComponent } from './components/resumen-carrito/resumen-ca
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  titulo = 'Carrito de Ventas con Observables y Pipes en Angular';
+  titulo = 'Carrito de Ventas con Observables y Pipes';
 }
