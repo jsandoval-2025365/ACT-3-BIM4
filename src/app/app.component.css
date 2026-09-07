@@ -1,0 +1,31 @@
+.encabezado-app {
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  color: #fff;
+  padding: 22px 32px;
+  border-radius: 0 0 14px 14px;
+}
+
+.encabezado-app h1 {
+  margin: 0 0 4px 0;
+  font-size: 1.4rem;
+}
+
+.encabezado-app p {
+  margin: 0;
+  opacity: 0.85;
+  font-size: 0.9rem;
+}
+
+.contenedor-principal {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 20px;
+  padding: 24px 32px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .contenedor-principal {
+    grid-template-columns: 1fr;
+  }
+}
